@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const menuItems = [
   {
     id: 1,
@@ -5,7 +7,7 @@ const menuItems = [
     category: "cakes",
     price: "From $120",
     description: "Elegant tiered cake with vanilla buttercream and fresh florals.",
-    emoji: "🎂",
+    image: "/images/wedding-cake.jpg",
     badge: "Bestseller",
     badgeColor: "bg-rose text-white",
   },
@@ -15,7 +17,7 @@ const menuItems = [
     category: "cakes",
     price: "$65",
     description: "Rich dark chocolate layers with silky ganache frosting.",
-    emoji: "🍫",
+    image: "/images/chocolate-cake.jpg",
     badge: null,
     badgeColor: "",
   },
@@ -25,7 +27,7 @@ const menuItems = [
     category: "cakes",
     price: "$55",
     description: "Light sponge with fresh strawberries and whipped cream.",
-    emoji: "🍓",
+    image: "/images/strawberry-shortcake.jpg",
     badge: "Seasonal",
     badgeColor: "bg-gold text-white",
   },
@@ -35,7 +37,7 @@ const menuItems = [
     category: "pastries",
     price: "$4.50",
     description: "Flaky, golden layers of pure buttery perfection.",
-    emoji: "🥐",
+    image: "/images/croissant.jpg",
     badge: "Daily Fresh",
     badgeColor: "bg-caramel text-white",
   },
@@ -45,7 +47,7 @@ const menuItems = [
     category: "pastries",
     price: "$5",
     description: "Swirled with cinnamon sugar and glazed with cream cheese icing.",
-    emoji: "🌀",
+    image: "/images/danish.jpg",
     badge: null,
     badgeColor: "",
   },
@@ -55,7 +57,7 @@ const menuItems = [
     category: "pastries",
     price: "$6",
     description: "Crispy tart shell filled with frangipane and toasted almonds.",
-    emoji: "🥧",
+    image: "/images/almond-tart.jpg",
     badge: null,
     badgeColor: "",
   },
@@ -65,7 +67,7 @@ const menuItems = [
     category: "breads",
     price: "$9",
     description: "Artisan sourdough with a perfect crust and chewy interior.",
-    emoji: "🍞",
+    image: "/images/sourdough.jpg",
     badge: "Artisan",
     badgeColor: "bg-brown text-white",
   },
@@ -75,7 +77,7 @@ const menuItems = [
     category: "breads",
     price: "$8",
     description: "Soft focaccia topped with olive oil, rosemary, and sea salt.",
-    emoji: "🌿",
+    image: "/images/focaccia.jpg",
     badge: null,
     badgeColor: "",
   },
@@ -85,7 +87,7 @@ const menuItems = [
     category: "cookies",
     price: "$3 each",
     description: "Chewy cookies loaded with dark and white chocolate chips.",
-    emoji: "🍪",
+    image: "/images/cookies.jpg",
     badge: "Fan Fav",
     badgeColor: "bg-rose text-white",
   },
@@ -117,11 +119,15 @@ export default function Menu() {
                          transition-all duration-300 border border-cream-dark hover:border-caramel-light
                          transform hover:-translate-y-1"
             >
-              {/* Card top - emoji illustration */}
-              <div className="relative bg-cream h-44 flex items-center justify-center">
-                <span className="text-7xl group-hover:scale-110 transition-transform duration-300">
-                  {item.emoji}
-                </span>
+              {/* Card top - food image */}
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
                 {item.badge && (
                   <span
                     className={`absolute top-3 right-3 text-xs font-lato font-bold px-3 py-1 rounded-full ${item.badgeColor}`}

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <!-- Circle background -->
+  <circle cx="30" cy="30" r="26" fill="#C47B3E"/>
+  <!-- Cake icon inside circle -->
+  <rect x="18" y="36" width="24" height="8" rx="2" fill="#FDF6EC"/>
+  <rect x="20" y="28" width="20" height="10" rx="1" fill="#F5E6D3"/>
+  <rect x="22" y="22" width="16" height="8" rx="1" fill="#FDF6EC"/>
+  <!-- Frosting drips -->
+  <path d="M20 28 Q21 26 22 28 Q23 26 24 28 Q25 26 26 28 Q27 26 28 28 Q29 26 30 28 Q31 26 32 28 Q33 26 34 28 Q35 26 36 28 Q37 26 38 28 Q39 26 40 28" stroke="#FFFAF5" stroke-width="1.5" fill="none"/>
+  <path d="M22 22 Q23 20 24 22 Q25 20 26 22 Q27 20 28 22 Q29 20 30 22 Q31 20 32 22 Q33 20 34 22 Q35 20 36 22 Q37 20 38 22" stroke="#FFFAF5" stroke-width="1.5" fill="none"/>
+  <!-- Candles -->
+  <rect x="26" y="16" width="2.5" height="7" rx="0.5" fill="#D4827A"/>
+  <rect x="30" y="14" width="2.5" height="9" rx="0.5" fill="#D4A843"/>
+  <rect x="34" y="16" width="2.5" height="7" rx="0.5" fill="#C47B3E"/>
+  <!-- Flames -->
+  <ellipse cx="27.25" cy="15" rx="1.5" ry="2" fill="#D4A843"/>
+  <ellipse cx="31.25" cy="13" rx="1.5" ry="2" fill="#D4A843"/>
+  <ellipse cx="35.25" cy="15" rx="1.5" ry="2" fill="#D4A843"/>
+  <!-- Brand Text -->
+  <text x="64" y="22" font-family="Georgia, serif" font-weight="700" font-size="18" fill="#3E1F00">Sabe</text>
+  <text x="64" y="22" font-family="Georgia, serif" font-weight="700" font-size="18" fill="#3E1F00"> </text>
+  <text x="104" y="22" font-family="Georgia, serif" font-weight="700" font-size="18" fill="#C47B3E">Bakes</text>
+  <!-- Tagline -->
+  <text x="64" y="42" font-family="Arial, sans-serif" font-size="9" fill="#6B3A1F" letter-spacing="2">ARTISAN BAKERY</text>
+  <!-- Decorative line -->
+  <line x1="64" y1="48" x2="190" y2="48" stroke="#C47B3E" stroke-width="0.8" opacity="0.5"/>
+</svg>

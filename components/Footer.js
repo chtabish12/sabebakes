@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
@@ -8,12 +10,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-caramel rounded-full flex items-center justify-center">
-                <span className="text-white font-playfair font-bold text-lg">S</span>
-              </div>
-              <span className="font-playfair font-bold text-xl">
-                Sabe <span className="text-caramel">Bakes</span>
-              </span>
+              <Image
+                src="/logo.svg"
+                alt="Sabe Bakes Logo"
+                width={160}
+                height={48}
+                className="h-12 w-auto brightness-0 invert"
+              />
             </div>
             <p className="font-lato text-sm text-cream/70 leading-relaxed max-w-xs">
               Handcrafted bakes made with love and the finest local ingredients.

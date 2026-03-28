@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Background gradient - warm cream -->
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FBE8E6"/>
+      <stop offset="100%" stop-color="#F5E6D3"/>
+    </radialGradient>
+    <radialGradient id="plateGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFAF5"/>
+      <stop offset="100%" stop-color="#F0E8D8"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgGrad)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="320" cy="60" r="80" fill="#D4827A" opacity="0.15"/>
+  <circle cx="60" cy="260" r="60" fill="#C47B3E" opacity="0.12"/>
+
+  <!-- Cake plate / base -->
+  <ellipse cx="200" cy="240" rx="130" ry="18" fill="#E8A96D" opacity="0.6"/>
+  
+  <!-- Bottom tier -->
+  <ellipse cx="200" cy="210" rx="120" ry="16" fill="#F0B8B2"/>
+  <rect x="80" y="170" width="240" height="45" rx="4" fill="#F0B8B2"/>
+  <ellipse cx="200" cy="170" rx="120" ry="16" fill="#F5D0CB"/>
+  <!-- Bottom tier frosting drips -->
+  <path d="M90 170 Q95 162 100 170 Q105 162 110 170 Q115 162 120 170 Q125 162 130 170 Q135 162 140 170 Q145 162 150 170 Q155 162 160 170 Q165 162 170 170 Q175 162 180 170 Q185 162 190 170 Q195 162 200 170 Q205 162 210 170 Q215 162 220 170 Q225 162 230 170 Q235 162 240 170 Q245 162 250 170 Q255 162 260 170 Q265 162 270 170 Q275 162 280 170 Q285 162 290 170 Q295 162 300 170 Q305 162 310 170" stroke="#FFFAF5" stroke-width="3" fill="none"/>
+  
+  <!-- Middle tier -->
+  <ellipse cx="200" cy="155" rx="90" ry="14" fill="#F5D4A0"/>
+  <rect x="110" y="120" width="180" height="38" rx="3" fill="#F5D4A0"/>
+  <ellipse cx="200" cy="120" rx="90" ry="14" fill="#FAE0B8"/>
+  <!-- Middle tier frosting drips -->
+  <path d="M115 120 Q120 112 125 120 Q130 112 135 120 Q140 112 145 120 Q150 112 155 120 Q160 112 165 120 Q170 112 175 120 Q180 112 185 120 Q190 112 195 120 Q200 112 205 120 Q210 112 215 120 Q220 112 225 120 Q230 112 235 120 Q240 112 245 120 Q250 112 255 120 Q260 112 265 120 Q270 112 275 120 Q280 112 285 120" stroke="#FFFAF5" stroke-width="2.5" fill="none"/>
+  
+  <!-- Top tier -->
+  <ellipse cx="200" cy="105" rx="55" ry="10" fill="#FBE8E6"/>
+  <rect x="145" y="78" width="110" height="30" rx="3" fill="#FBE8E6"/>
+  <ellipse cx="200" cy="78" rx="55" ry="10" fill="#FDD5D0"/>
+  <!-- Top tier frosting -->
+  <path d="M150 78 Q155 70 160 78 Q165 70 170 78 Q175 70 180 78 Q185 70 190 78 Q195 70 200 78 Q205 70 210 78 Q215 70 220 78 Q225 70 230 78 Q235 70 240 78 Q245 70 250 78" stroke="#FFFAF5" stroke-width="2" fill="none"/>
+  
+  <!-- Floral decorations on cake -->
+  <circle cx="165" cy="195" r="8" fill="#D4827A" opacity="0.9"/>
+  <circle cx="165" cy="195" r="4" fill="#F0B8B2"/>
+  <circle cx="200" cy="192" r="8" fill="#C47B3E" opacity="0.9"/>
+  <circle cx="200" cy="192" r="4" fill="#E8A96D"/>
+  <circle cx="235" cy="195" r="8" fill="#D4827A" opacity="0.9"/>
+  <circle cx="235" cy="195" r="4" fill="#F0B8B2"/>
+  
+  <!-- Candles on top -->
+  <rect x="183" y="52" width="6" height="28" rx="2" fill="#D4827A"/>
+  <rect x="197" y="48" width="6" height="32" rx="2" fill="#D4A843"/>
+  <rect x="211" y="52" width="6" height="28" rx="2" fill="#C47B3E"/>
+  <!-- Flames -->
+  <ellipse cx="186" cy="50" rx="3" ry="4" fill="#FFD700" opacity="0.9"/>
+  <ellipse cx="200" cy="46" rx="3" ry="4" fill="#FFD700" opacity="0.9"/>
+  <ellipse cx="214" cy="50" rx="3" ry="4" fill="#FFD700" opacity="0.9"/>
+  
+  <!-- Text label -->
+  <text x="200" y="285" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#3E1F00" font-weight="600">Classic Wedding Cake</text>
+</svg>

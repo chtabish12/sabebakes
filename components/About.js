@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const features = [
   {
     icon: "🌾",
@@ -32,20 +34,24 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Visual side */}
           <div className="relative order-2 lg:order-1">
-            {/* Main card */}
-            <div className="relative bg-caramel rounded-[2rem] p-10 text-white shadow-2xl overflow-hidden">
-              {/* Decorative circles */}
-              <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-caramel-light opacity-30" />
-              <div className="absolute -bottom-10 -left-10 w-32 h-32 rounded-full bg-caramel-dark opacity-40" />
-
-              <div className="relative z-10">
+            {/* Main card with bakery photo */}
+            <div className="relative bg-caramel rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/5]">
+              <Image
+                src="/images/about-bakery.jpg"
+                alt="Sabe Bakes bakery kitchen"
+                fill
+                className="object-cover opacity-80"
+              />
+              {/* Overlay with story text */}
+              <div className="absolute inset-0 bg-gradient-to-t from-brown/80 via-caramel/30 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                 <p className="font-lato text-caramel-light text-sm font-semibold tracking-widest uppercase mb-2">
                   Our Story
                 </p>
-                <h3 className="font-playfair text-3xl font-bold mb-4 leading-tight">
+                <h3 className="font-playfair text-2xl font-bold mb-3 leading-tight">
                   A bakery born from passion
                 </h3>
-                <p className="font-lato text-cream/90 leading-relaxed">
+                <p className="font-lato text-cream/90 text-sm leading-relaxed">
                   Sabe Bakes started as a home kitchen experiment that quickly
                   grew into a beloved local bakery. Our founder Sabe has been
                   baking since she was eight years old, learning from her
@@ -54,7 +60,7 @@ export default function About() {
                 </p>
 
                 {/* Signature */}
-                <div className="mt-8 flex items-center gap-4">
+                <div className="mt-6 flex items-center gap-4">
                   <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-2xl">
                     👩‍🍳
                   </div>

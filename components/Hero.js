@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section
@@ -52,53 +54,30 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Image / Illustration */}
+          {/* Image */}
           <div className="relative z-10 flex justify-center items-center">
-            <div className="relative w-80 h-80 md:w-[420px] md:h-[420px]">
-              {/* Circle background */}
+            <div className="relative w-80 h-80 md:w-[440px] md:h-[440px]">
+              {/* Decorative circle behind image */}
               <div className="absolute inset-0 rounded-full bg-rose-pale" />
 
-              {/* Main cake illustration using CSS */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative">
-                  {/* Cake stand */}
-                  <div className="w-48 h-3 bg-caramel rounded-full mx-auto mt-4" />
-                  <div className="w-8 h-10 bg-caramel-dark rounded-b-lg mx-auto" />
-
-                  {/* Cake layers */}
-                  <div className="absolute bottom-[60px] left-1/2 -translate-x-1/2 w-40 h-10 bg-caramel-light rounded-b-xl" />
-                  <div className="absolute bottom-[95px] left-1/2 -translate-x-1/2 w-36 h-16 bg-cream-dark rounded-t-none" />
-                  <div className="absolute bottom-[160px] left-1/2 -translate-x-1/2 w-28 h-14 bg-cream rounded-t-none" />
-                  <div className="absolute bottom-[223px] left-1/2 -translate-x-1/2 w-20 h-12 bg-rose-pale rounded-t-lg" />
-
-                  {/* Frosting drips */}
-                  <div className="absolute bottom-[168px] left-1/2 -translate-x-1/2 w-32 h-3 bg-warm-white rounded-full" />
-                  <div className="absolute bottom-[231px] left-1/2 -translate-x-1/2 w-24 h-3 bg-warm-white rounded-full" />
-
-                  {/* Candles */}
-                  <div className="absolute bottom-[262px] left-1/2 -translate-x-[60px] w-3 h-8 bg-rose rounded-t-full" />
-                  <div className="absolute bottom-[262px] left-1/2 -translate-x-1/2 w-3 h-8 bg-gold rounded-t-full" />
-                  <div className="absolute bottom-[262px] left-1/2 translate-x-[40px] w-3 h-8 bg-caramel rounded-t-full" />
-
-                  {/* Flames */}
-                  <div className="absolute bottom-[292px] left-1/2 -translate-x-[57px] w-2 h-3 bg-gold rounded-full animate-pulse" />
-                  <div className="absolute bottom-[292px] left-1/2 -translate-x-[3px] w-2 h-3 bg-gold rounded-full animate-pulse" />
-                  <div className="absolute bottom-[292px] left-1/2 translate-x-[43px] w-2 h-3 bg-gold rounded-full animate-pulse" />
-
-                  {/* Decorative dots */}
-                  <div className="absolute bottom-[100px] left-1/2 -translate-x-[60px] w-3 h-3 rounded-full bg-rose" />
-                  <div className="absolute bottom-[100px] left-1/2 -translate-x-[30px] w-3 h-3 rounded-full bg-caramel" />
-                  <div className="absolute bottom-[100px] left-1/2 translate-x-[10px] w-3 h-3 rounded-full bg-rose" />
-                  <div className="absolute bottom-[100px] left-1/2 translate-x-[40px] w-3 h-3 rounded-full bg-caramel" />
-                </div>
+              {/* Hero cake image */}
+              <div className="absolute inset-4 rounded-full overflow-hidden shadow-2xl">
+                <Image
+                  src="/images/hero-cake.jpg"
+                  alt="Beautiful artisan cake from Sabe Bakes"
+                  fill
+                  sizes="(max-width: 768px) 320px, 440px"
+                  className="object-cover"
+                  priority
+                />
               </div>
 
               {/* Floating tags */}
-              <div className="absolute top-6 -right-4 bg-white shadow-lg rounded-2xl px-4 py-2 text-center">
+              <div className="absolute top-6 -right-4 bg-white shadow-lg rounded-2xl px-4 py-2 text-center z-10">
                 <p className="text-xs font-lato text-brown-light">Fresh Today</p>
                 <p className="text-sm font-playfair font-bold text-caramel">🍰 Pastries</p>
               </div>
-              <div className="absolute bottom-10 -left-4 bg-white shadow-lg rounded-2xl px-4 py-2 text-center">
+              <div className="absolute bottom-10 -left-4 bg-white shadow-lg rounded-2xl px-4 py-2 text-center z-10">
                 <p className="text-xs font-lato text-brown-light">Best Seller</p>
                 <p className="text-sm font-playfair font-bold text-caramel">🎂 Custom Cakes</p>
               </div>
