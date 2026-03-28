@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-warm-white text-brown;
+    font-family: "Lato", system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-brown leading-tight;
+    font-family: "Playfair Display", Georgia, serif;
+  }
+
+  .section-subtitle {
+    @apply text-caramel text-sm font-semibold tracking-widest uppercase mb-3;
+    font-family: "Lato", system-ui, sans-serif;
+  }
+
+  .btn-primary {
+    @apply bg-caramel text-white px-8 py-3 rounded-full font-semibold text-sm tracking-wide 
+           hover:bg-caramel-dark transition-all duration-300 shadow-md hover:shadow-lg 
+           transform hover:-translate-y-0.5 inline-block;
+    font-family: "Lato", system-ui, sans-serif;
+  }
+
+  .btn-outline {
+    @apply border-2 border-caramel text-caramel px-8 py-3 rounded-full font-semibold text-sm 
+           tracking-wide hover:bg-caramel hover:text-white transition-all duration-300 inline-block;
+    font-family: "Lato", system-ui, sans-serif;
+  }
+
+  .font-playfair {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  }
+
+  .font-lato {
+    font-family: "Lato", system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
