@@ -64,7 +64,7 @@ export default function Hero() {
 
               {/* Top left blob */}
               <div className="absolute top-0 left-0 w-[48%] h-[48%]">
-                <div className="w-full h-full rounded-[60%_40%_50%_60%/50%_60%_40%_50%] overflow-hidden bg-rose shadow-lg">
+                <div className="relative w-full h-full rounded-[60%_40%_50%_60%/50%_60%_40%_50%] overflow-hidden bg-rose shadow-lg">
                   <Image
                     src="/images/blob-cannoli.jpg"
                     alt="Fresh Cannoli"
@@ -77,7 +77,7 @@ export default function Hero() {
 
               {/* Top right blob */}
               <div className="absolute top-4 right-0 w-[46%] h-[45%]">
-                <div className="w-full h-full rounded-[50%_60%_40%_55%/60%_45%_55%_40%] overflow-hidden bg-rose-light shadow-lg">
+                <div className="relative w-full h-full rounded-[50%_60%_40%_55%/60%_45%_55%_40%] overflow-hidden bg-rose-light shadow-lg">
                   <Image
                     src="/images/blob-pastry.jpg"
                     alt="Croissant"
@@ -90,7 +90,7 @@ export default function Hero() {
 
               {/* Bottom left blob */}
               <div className="absolute bottom-0 left-8 w-[45%] h-[46%]">
-                <div className="w-full h-full rounded-[45%_55%_60%_40%/55%_40%_60%_45%] overflow-hidden bg-rose shadow-lg">
+                <div className="relative w-full h-full rounded-[45%_55%_60%_40%/55%_40%_60%_45%] overflow-hidden bg-rose shadow-lg">
                   <Image
                     src="/images/blob-cream-puff.jpg"
                     alt="Cream Puff"
@@ -103,7 +103,7 @@ export default function Hero() {
 
               {/* Bottom right blob */}
               <div className="absolute bottom-4 right-0 w-[47%] h-[47%]">
-                <div className="w-full h-full rounded-[55%_45%_40%_60%/40%_60%_50%_50%] overflow-hidden bg-rose-light shadow-lg">
+                <div className="relative w-full h-full rounded-[55%_45%_40%_60%/40%_60%_50%_50%] overflow-hidden bg-rose-light shadow-lg">
                   <Image
                     src="/images/blob-tiramisu.jpg"
                     alt="Tiramisu"
