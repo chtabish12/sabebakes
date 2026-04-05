@@ -1,19 +1,28 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="bg-brown text-cream py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
-          <div>
-            <h3
-              className="text-2xl font-bold text-cream-light mb-2"
-              style={{ fontFamily: "'Dancing Script', cursive" }}
-            >
-              SABÉ
-            </h3>
-            <p className="text-cream-dark text-sm leading-relaxed">
-              Homemade Bakery &amp; Pasticceria<br />
-              Wholesale Italian bakes, handcrafted with love.
+          <div className="lg:col-span-2">
+            <div className="flex items-center gap-2.5 mb-4">
+              <div className="relative w-11 h-11 flex-shrink-0">
+                <Image
+                  src="/logo.svg"
+                  alt="Sabe Bakes logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <span className="font-playfair font-bold text-xl">
+                Sabe <span className="text-caramel">Bakes</span>
+              </span>
+            </div>
+            <p className="font-lato text-sm text-cream/70 leading-relaxed max-w-xs">
+              Handcrafted bakes made with love and the finest local ingredients.
+              Bringing sweetness to every occasion since 2016.
             </p>
           </div>
 
