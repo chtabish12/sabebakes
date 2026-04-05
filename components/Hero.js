@@ -16,9 +16,9 @@ const features = [
 ];
 
 const featureImages = [
-  { src: "/images/feature-cheesecake.jpg", alt: "Cheesecake" },
-  { src: "/images/feature-oreo-cake.jpg", alt: "Oreo Cake" },
-  { src: "/images/feature-strawberry-cheese.jpg", alt: "Strawberry Cheesecake" },
+  { src: "/assets/feature-cheesecake.jpeg", alt: "Cheesecake" },
+  { src: "/assets/feature-oreo-cake.jpeg", alt: "Oreo Cake" },
+  { src: "/assets/feature-strawberry-cheese.jpeg", alt: "Strawberry Cheesecake" },
 ];
 
 export default function Hero() {
@@ -66,7 +66,7 @@ export default function Hero() {
               <div className="absolute top-0 left-0 w-[48%] h-[48%]">
                 <div className="relative w-full h-full rounded-[60%_40%_50%_60%/50%_60%_40%_50%] overflow-hidden bg-rose shadow-lg">
                   <Image
-                    src="/images/blob-cannoli.jpg"
+                    src="/assets/blob-cannoli.png"
                     alt="Fresh Cannoli"
                     fill
                     sizes="(max-width: 768px) 45vw, 22vw"
@@ -79,7 +79,7 @@ export default function Hero() {
               <div className="absolute top-4 right-0 w-[46%] h-[45%]">
                 <div className="relative w-full h-full rounded-[50%_60%_40%_55%/60%_45%_55%_40%] overflow-hidden bg-rose-light shadow-lg">
                   <Image
-                    src="/images/blob-pastry.jpg"
+                    src="/assets/blob-pastry.png"
                     alt="Croissant"
                     fill
                     sizes="(max-width: 768px) 43vw, 21vw"
@@ -92,7 +92,7 @@ export default function Hero() {
               <div className="absolute bottom-0 left-8 w-[45%] h-[46%]">
                 <div className="relative w-full h-full rounded-[45%_55%_60%_40%/55%_40%_60%_45%] overflow-hidden bg-rose shadow-lg">
                   <Image
-                    src="/images/blob-cream-puff.jpg"
+                    src="/assets/blob-cream-puff.png"
                     alt="Cream Puff"
                     fill
                     sizes="(max-width: 768px) 42vw, 21vw"
@@ -105,7 +105,7 @@ export default function Hero() {
               <div className="absolute bottom-4 right-0 w-[47%] h-[47%]">
                 <div className="relative w-full h-full rounded-[55%_45%_40%_60%/40%_60%_50%_50%] overflow-hidden bg-rose-light shadow-lg">
                   <Image
-                    src="/images/blob-tiramisu.jpg"
+                    src="/assets/blob-tiramisu.png"
                     alt="Tiramisu"
                     fill
                     sizes="(max-width: 768px) 44vw, 22vw"

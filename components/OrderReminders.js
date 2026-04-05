@@ -2,21 +2,21 @@ import Image from "next/image";
 
 const reminders = [
   {
-    src: "/images/reminder-croissants.jpg",
+    src: "/assets/reminder-croissants.jpg",
     text: "We bake every morning in small batches. For same-day cravings, give us a quick call!",
   },
   {
-    src: "/images/reminder-tart.jpg",
+    src: "/assets/reminder-tart.jpg",
     boldText: "Order Window",
     text: "Orders placed after 4 PM roll over to the next morning's bake. Still oven-fresh, never frozen.",
   },
   {
-    src: "/images/reminder-macaron.jpg",
+    src: "/assets/reminder-macaron.jpg",
     boldText: "Pickup & Delivery Hours",
     text: "9 AM – 5 PM, Monday to Saturday. Sundays are for rest...",
   },
   {
-    src: "/images/reminder-nuts.jpg",
+    src: "/assets/reminder-nuts.jpg",
     text: "Planning a celebration? Place your order 24–48 hours ahead to guarantee availability and freshness.",
   },
 ];
