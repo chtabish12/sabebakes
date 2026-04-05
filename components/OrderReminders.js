@@ -36,18 +36,18 @@ export default function OrderReminders() {
           {reminders.map((reminder, i) => (
             <div
               key={i}
-              className="bg-white rounded-2xl p-5 shadow-sm flex items-start gap-4"
+              className="bg-white rounded-2xl p-5 shadow-sm flex flex-row items-stretch gap-0"
             >
-              <div className="relative w-24 h-20 flex-shrink-0 rounded-xl overflow-hidden">
+              <div className="relative w-1/2 h-40 rounded-xl overflow-hidden">
                 <Image
                   src={reminder.src}
                   alt="Order reminder"
                   fill
-                  sizes="96px"
+                  sizes="50vw"
                   className="object-cover"
                 />
               </div>
-              <div className="flex-1">
+              <div className="flex-1 w-1/2 flex flex-col justify-center p-4">
                 {reminder.boldText && (
                   <span className="font-bold text-brown text-sm block mb-1">
                     {reminder.boldText}

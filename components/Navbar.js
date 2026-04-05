@@ -31,17 +31,17 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <Link href="#home" className="flex items-center gap-2.5 group">
-          <div className="relative w-11 h-11 flex-shrink-0 drop-shadow-md group-hover:scale-105 transition-transform duration-200">
+          <div className="relative w-12 h-12 flex-shrink-0 drop-shadow-md group-hover:scale-105 transition-transform duration-200">
             <Image
               src="/logo.svg"
-              alt="Sabe Bakes logo"
+              alt="Sabé Bakes logo"
               fill
               className="object-contain"
               priority
             />
           </div>
           <span className="font-playfair font-bold text-xl text-brown">
-            Sabe <span className="text-caramel">Bakes</span>
+            Sab<span className="italic">é</span> <span className="text-caramel">Bakes</span>
           </span>
         </Link>
 
