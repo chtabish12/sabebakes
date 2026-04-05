@@ -4,6 +4,7 @@ import Menu from "@/components/Menu";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import OrderSection from "@/components/OrderSection";
+import BottomBanner from "@/components/BottomBanner";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <About />
       <Testimonials />
       <OrderSection />
+      <BottomBanner />
       <Footer />
     </main>
   );

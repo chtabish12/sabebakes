@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
@@ -7,9 +9,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-caramel rounded-full flex items-center justify-center">
-                <span className="text-white font-playfair font-bold text-lg">S</span>
+            <div className="flex items-center gap-2.5 mb-4">
+              <div className="relative w-11 h-11 flex-shrink-0">
+                <Image
+                  src="/logo.svg"
+                  alt="Sabe Bakes logo"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <span className="font-playfair font-bold text-xl">
                 Sabe <span className="text-caramel">Bakes</span>
