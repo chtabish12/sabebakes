@@ -1,13 +1,23 @@
+import Image from "next/image";
+
 export default function BottomBanner() {
   return (
     <section className="relative overflow-hidden bg-brown py-16 md:py-20">
-      {/* Decorative background circles */}
-      <div className="absolute -top-20 -left-20 w-72 h-72 rounded-full bg-caramel opacity-10 pointer-events-none" />
-      <div className="absolute -bottom-20 -right-20 w-96 h-96 rounded-full bg-caramel opacity-10 pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-caramel-dark opacity-5 pointer-events-none" />
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/assets/bottom-banner.jpeg"
+          alt="Freshly baked goods"
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-brown/75" />
+      </div>
 
       {/* Top accent line */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-caramel to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-caramel to-transparent z-10" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         {/* Sparkle icon */}

@@ -4,20 +4,20 @@ export default function Footer() {
   return (
     <footer className="bg-brown text-cream py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
-          <div className="lg:col-span-2">
+          <div className="md:col-span-2">
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="relative w-11 h-11 flex-shrink-0">
+              <div className="relative w-12 h-12 flex-shrink-0">
                 <Image
                   src="/logo.svg"
-                  alt="Sabe Bakes logo"
+                  alt="Sabé Bakes logo"
                   fill
                   className="object-contain"
                 />
               </div>
               <span className="font-playfair font-bold text-xl">
-                Sabe <span className="text-caramel">Bakes</span>
+                Sab<span className="italic">é</span> <span className="text-caramel">Bakes</span>
               </span>
             </div>
             <p className="font-lato text-sm text-cream/70 leading-relaxed max-w-xs">
