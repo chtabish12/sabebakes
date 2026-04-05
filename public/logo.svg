@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Outer circle -->
+  <circle cx="60" cy="60" r="58" fill="#C47B3E"/>
+  <!-- Inner ring -->
+  <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+
+  <!-- Cake base layer -->
+  <rect x="28" y="74" width="64" height="14" rx="4" fill="white" opacity="0.92"/>
+  <!-- Cake middle layer -->
+  <rect x="33" y="60" width="54" height="15" rx="3" fill="white" opacity="0.85"/>
+  <!-- Cake top layer -->
+  <rect x="39" y="48" width="42" height="13" rx="3" fill="white" opacity="0.78"/>
+
+  <!-- Frosting drips on middle layer -->
+  <path d="M33 60 Q37 56 41 60 Q45 56 49 60 Q53 56 57 60 Q61 56 65 60 Q69 56 73 60 Q77 56 81 60 Q85 56 87 60" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+
+  <!-- Candle 1 -->
+  <rect x="50" y="38" width="4" height="11" rx="2" fill="#FBE8E6"/>
+  <!-- Candle 2 -->
+  <rect x="58" y="36" width="4" height="13" rx="2" fill="#E8A96D"/>
+  <!-- Candle 3 -->
+  <rect x="66" y="38" width="4" height="11" rx="2" fill="#FBE8E6"/>
+
+  <!-- Flames -->
+  <ellipse cx="52" cy="36" rx="2.5" ry="3.5" fill="#D4A843"/>
+  <ellipse cx="60" cy="34" rx="2.5" ry="3.5" fill="#D4A843"/>
+  <ellipse cx="68" cy="36" rx="2.5" ry="3.5" fill="#D4A843"/>
+
+  <!-- Decorative dots on base -->
+  <circle cx="38" cy="81" r="2.5" fill="#C47B3E" opacity="0.7"/>
+  <circle cx="48" cy="81" r="2.5" fill="#C47B3E" opacity="0.7"/>
+  <circle cx="58" cy="81" r="2.5" fill="#C47B3E" opacity="0.7"/>
+  <circle cx="68" cy="81" r="2.5" fill="#C47B3E" opacity="0.7"/>
+  <circle cx="78" cy="81" r="2.5" fill="#C47B3E" opacity="0.7"/>
+
+  <!-- Stars / sparkles -->
+  <path d="M22 30 L23.5 26 L25 30 L29 31.5 L25 33 L23.5 37 L22 33 L18 31.5 Z" fill="white" opacity="0.6"/>
+  <path d="M92 42 L93 39 L94 42 L97 43 L94 44 L93 47 L92 44 L89 43 Z" fill="white" opacity="0.5"/>
+</svg>

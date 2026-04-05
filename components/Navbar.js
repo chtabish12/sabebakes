@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
@@ -31,11 +32,15 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
-        <Link href="#home" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 bg-caramel rounded-full flex items-center justify-center shadow-md group-hover:bg-caramel-dark transition-colors">
-            <span className="text-white font-playfair font-bold text-lg leading-none">
-              S
-            </span>
+        <Link href="#home" className="flex items-center gap-2.5 group">
+          <div className="relative w-11 h-11 flex-shrink-0 drop-shadow-md group-hover:scale-105 transition-transform duration-200">
+            <Image
+              src="/logo.svg"
+              alt="Sabe Bakes logo"
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
           <span className="font-playfair font-bold text-xl text-brown">
             Sabe <span className="text-caramel">Bakes</span>
