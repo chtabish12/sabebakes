@@ -16,9 +16,9 @@ const features = [
 ];
 
 const featureImages = [
-  { src: "/assets/feature-cheesecake.jpeg", alt: "Cheesecake" },
-  { src: "/assets/feature-oreo-cake.jpeg", alt: "Oreo Cake" },
-  { src: "/assets/feature-strawberry-cheese.jpeg", alt: "Strawberry Cheesecake" },
+  { src: "/assets/pastries.png", alt: "Pastries" },
+  { src: "/assets/oreo.png", alt: "Oreo Cake" },
+  { src: "/assets/cheesec.png", alt: "Strawberry Cheesecake" },
 ];
 
 export default function Hero() {
@@ -157,7 +157,7 @@ export default function Hero() {
           {/* 3 Feature photos */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {featureImages.map((img) => (
-              <div key={img.src} className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <div key={img.src} className="relative aspect-[3/3] rounded-2xl overflow-hidden">
                 <Image
                   src={img.src}
                   alt={img.alt}
