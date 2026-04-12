@@ -2,22 +2,22 @@ import Image from "next/image";
 
 const popularCakes = [
   {
-    src: "/assets/cake-milk.jpeg",
+    src: "/assets/milkcake.png",
     name: "Milk Cakes",
     subtitle: "Classic | Customisable",
   },
   {
-    src: "/assets/cake-cheesecake.jpeg",
+    src: "/assets/cheese.png",
     name: "Cheesecakes",
     subtitle: "Flavours Available",
   },
   {
-    src: "/assets/cake-crumble.jpeg",
+    src: "/assets/crumble.jpg",
     name: "Italian Crumble Cakes",
     subtitle: "Ricotta | Hazelnut",
   },
   {
-    src: "/assets/cake-mimosa.jpeg",
+    src: "/assets/mimosa.png",
     name: "Italian Mimosa Cake",
     subtitle: "Classic",
   },
@@ -25,22 +25,22 @@ const popularCakes = [
 
 const pastries = [
   {
-    src: "/assets/pastry-tiramisu.jpeg",
+    src: "/assets/tiramisu.png",
     name: "Authentic Tiramisù",
     subtitle: "Alcohol-Free",
   },
   {
-    src: "/assets/pastry-eclair.jpeg",
+    src: "/assets/elcair.png",
     name: "Eclair Cake",
     subtitle: "Exclusive",
   },
   {
-    src: "/assets/pastry-cannoli.jpeg",
+    src: "/assets/cannoli.png",
     name: "Large Filled Cannoli",
     subtitle: "Freshly filled",
   },
   {
-    src: "/assets/pastry-croissant.jpeg",
+    src: "/assets/croissant.png",
     name: "French Large Croissant",
     subtitle: "Filled & Topped",
   },
@@ -48,22 +48,22 @@ const pastries = [
 
 const classicBakes = [
   {
-    src: "/assets/bake-lemon-loaf.jpeg",
+    src: "/assets/lemon.png",
     name: "Lemon Loaf",
     subtitle: "Customisable",
   },
   {
-    src: "/assets/bake-victoria.jpeg",
+    src: "/assets/victoria.png",
     name: "Victoria Sponge",
     subtitle: "Classic",
   },
   {
-    src: "/assets/bake-sprinkle.jpg",
+    src: "/assets/sprinkle.png",
     name: "Sprinkle Pudding Cake",
     subtitle: "Classic",
   },
   {
-    src: "/assets/bake-brownies.png",
+    src: "/assets/brownie.png",
     name: "Brownies",
     subtitle: "Multiple flavours",
   },
