@@ -37,8 +37,9 @@ export default function Footer() {
             <p className="text-cream-dark text-sm leading-loose">
               Based in the Midlands, UK<br />
               Wholesale enquiries welcome<br />
-              <a href="mailto:hello@sabebakes.co.uk" className="hover:text-rose transition-colors">
-                hello@sabebakes.co.uk
+              Allergy &amp; dietary enquiries welcome<br />
+              <a href="mailto:info.sabenbakes@gmail.com" className="hover:text-rose transition-colors">
+                info.sabenbakes@gmail.com
               </a>
             </p>
           </div>

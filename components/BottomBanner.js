@@ -58,9 +58,9 @@ export default function BottomBanner() {
         <div className="flex flex-wrap justify-center gap-6 md:gap-10">
           {[
             { icon: "🎂", text: "Custom Cakes" },
-            { icon: "🚚", text: "Free Delivery*" },
+            { icon: "🚚", text: "Delivery Available on Request" },
             { icon: "⭐", text: "5-Star Rated" },
-            { icon: "🌿", text: "Fresh Daily" },
+            { icon: "🌿", text: "Halal & Vegan Friendly" },
           ].map((badge) => (
             <div key={badge.text} className="flex items-center gap-2">
               <span className="text-xl">{badge.icon}</span>
