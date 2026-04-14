@@ -39,10 +39,10 @@ export default function Hero() {
                 Handcrafted.
               </h1>
               <p className="text-brown-light text-base leading-relaxed mb-4">
-                We are a wholesale Italian homemade bakery based in the Midlands, supplying cafés, restaurants, and businesses with freshly handcrafted products.
+                We are a wholesale homemade bakery based in the Midlands, supplying cafés, restaurants, and businesses with freshly handcrafted products.
               </p>
               <p className="text-brown-light text-base leading-relaxed mb-8">
-                Every item is produced in small batches — from authentic tiramisù and cannoli to seasonal cakes — ensuring the highest quality, consistency, and freshness for your customers.
+                Every item is produced in small batches from authentic tiramisù and cannoli to seasonal cakes and classic bakes ensuring the highest quality, consistency, and freshness for your customers.
               </p>
               <a
                 href="#order"
@@ -134,7 +134,7 @@ export default function Hero() {
             </div>
             <div className="flex items-center">
               <p className="text-brown-light text-base leading-relaxed">
-                Produced in small batches to ensure consistency, quality and freshness for professional use. Each item is crafted with care using traditional Italian recipes.
+                Produced in small batches to ensure consistency, quality and freshness for professional use. Each item is crafted with care using traditional recipes.
               </p>
             </div>
           </div>
