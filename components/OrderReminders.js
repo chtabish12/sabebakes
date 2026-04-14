@@ -1,62 +1,55 @@
 import Image from "next/image";
 
-const reminders = [
-  {
-    src: "/assets/reminder-croissants.jpg",
-    text: "We bake every morning in small batches. For same-day cravings, give us a quick call!",
-  },
-  {
-    src: "/assets/reminder-tart.jpg",
-    boldText: "Order Window",
-    text: "Orders placed after 4 PM roll over to the next morning's bake. Still oven-fresh, never frozen.",
-  },
-  {
-    src: "/assets/reminder-macaron.jpg",
-    boldText: "Pickup & Delivery Hours",
-    text: "9 AM – 5 PM, Monday to Saturday. Sundays are for rest...",
-  },
-  {
-    src: "/assets/reminder-nuts.jpg",
-    text: "Planning a celebration? Place your order 24–48 hours ahead to guarantee availability and freshness.",
-  },
-];
-
 export default function OrderReminders() {
   return (
-    <section id="order-reminders" className="bg-cream py-20">
+    <section id="about" className="bg-cream py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2
-          className="font-playfair text-4xl md:text-5xl font-bold text-brown mb-10"
+          className="font-playfair text-4xl md:text-5xl font-bold text-brown mb-10 uppercase"
           style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
-          Order Reminders
+          About Us
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {reminders.map((reminder, i) => (
-            <div
-              key={i}
-              className="bg-white rounded-2xl p-5 shadow-sm flex flex-row items-stretch gap-0"
-            >
-              <div className="relative w-1/2 h-40 rounded-xl overflow-hidden">
-                <Image
-                  src={reminder.src}
-                  alt="Order reminder"
-                  fill
-                  sizes="50vw"
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex-1 w-1/2 flex flex-col justify-center p-4">
-                {reminder.boldText && (
-                  <span className="font-bold text-brown text-sm block mb-1">
-                    {reminder.boldText}
-                  </span>
-                )}
-                <p className="text-brown-light text-sm leading-relaxed">{reminder.text}</p>
-              </div>
+        <div className="space-y-6">
+          <div className="bg-white rounded-2xl p-8 shadow-sm">
+            <p className="text-brown text-2xl md:text-3xl leading-relaxed text-center">
+              At our homemade bakery, every treat is crafted by hand with the warmth only a home kitchen can provide. Our
+              head baker uses years of experience to master authentic Italian pastries, buttery French classics, and timeless
+              English bakes.
+            </p>
+            <p className="text-brown text-2xl md:text-3xl leading-relaxed text-center mt-10">
+              We believe everyone deserves a seat at our table. We gladly tailor our homemade recipes to be gluten-free,
+              <strong> halal, vegan</strong>, or alcohol-free, and we take expert care with specific allergens. Whatever your
+              needs, we adapt our craft to ensure you enjoy a perfect treat without compromising on that genuine,
+              from-scratch taste.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl p-5 md:p-6 shadow-sm flex flex-col md:flex-row items-stretch gap-4">
+            <div className="relative w-full md:w-1/2 h-56 md:h-auto rounded-xl overflow-hidden min-h-[220px]">
+              <Image
+                src="/assets/reminder-tart.jpg"
+                alt="Bakery product example"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+              />
             </div>
-          ))}
+            <div className="flex-1 flex flex-col justify-center p-2 md:p-4">
+              <h3 className="font-playfair text-2xl md:text-3xl font-bold text-brown mb-3 uppercase">
+                Product List &amp; Prices
+              </h3>
+              <p className="text-brown-light text-lg leading-relaxed">
+                We use premium ingredients to deliver top-tier bakes at the best prices around. Many of our most popular
+                items are delivered fresh every morning for as little as less than £2 per unit.
+              </p>
+              <p className="text-brown-light text-lg leading-relaxed mt-6">
+                Since our homemade menu is always evolving, send us a query for our full product list and pricing.
+                Let&apos;s bake something incredible for you!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

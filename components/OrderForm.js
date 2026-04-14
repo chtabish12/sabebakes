@@ -5,10 +5,9 @@ import { useState } from "react";
 export default function OrderForm() {
   const [formData, setFormData] = useState({
     email: "",
-    product1: "",
-    product2: "",
-    quantity: "",
-    details: "",
+    contactNumber: "",
+    addressPostcode: "",
+    notes: "",
   });
   const [submitted, setSubmitted] = useState(false);
 
@@ -25,7 +24,6 @@ export default function OrderForm() {
     <section id="order" className="bg-cream py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          {/* Left: heading */}
           <div>
             <h2
               className="font-playfair text-4xl md:text-5xl font-bold text-brown mb-6 leading-tight"
@@ -34,14 +32,15 @@ export default function OrderForm() {
               Ready to order?
             </h2>
             <p className="text-brown-light text-base leading-relaxed">
-              Just fill in your cravings! Tell us what you want, how much you need, and when you&apos;d like it. We&apos;ll get back to you to confirm availability and arrange delivery.
+              Planning a celebration, café restock, or special event? Share your details below and we&apos;ll help you
+              choose the best options for your date, quantity, and budget.
             </p>
             <p className="text-brown-light text-base leading-relaxed mt-4">
-              We supply cafés, restaurants, delis, and businesses across the Midlands. Minimum order quantities apply — get in touch for wholesale pricing.
+              Every enquiry is handled personally — from first message to final handover — so your order is smooth,
+              clear, and made exactly the way you need it.
             </p>
           </div>
 
-          {/* Right: form card */}
           <div className="bg-cream-dark rounded-3xl p-8 shadow-sm">
             <h3
               className="font-playfair text-2xl font-bold text-brown mb-6"
@@ -58,7 +57,7 @@ export default function OrderForm() {
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                 <div>
-                  <label className="block text-brown text-sm font-semibold mb-1">Email address</label>
+                  <label className="block text-brown text-sm font-semibold mb-1">Email</label>
                   <input
                     type="email"
                     name="email"
@@ -71,49 +70,45 @@ export default function OrderForm() {
                 </div>
 
                 <div>
-                  <label className="block text-brown text-sm font-semibold mb-1">Your order</label>
+                  <label className="block text-brown text-sm font-semibold mb-1">Contact number</label>
                   <input
-                    type="text"
-                    name="product1"
-                    value={formData.product1}
+                    type="tel"
+                    name="contactNumber"
+                    value={formData.contactNumber}
                     onChange={handleChange}
-                    placeholder="Product 1 (e.g. Tiramisù)"
-                    className="w-full px-4 py-2.5 rounded-xl border border-cream-dark bg-white text-brown text-sm focus:outline-none focus:ring-2 focus:ring-brown mb-2"
-                  />
-                  <input
-                    type="text"
-                    name="product2"
-                    value={formData.product2}
-                    onChange={handleChange}
-                    placeholder="Product 2 (optional)"
+                    required
+                    placeholder="e.g. +44 7000 000000"
                     className="w-full px-4 py-2.5 rounded-xl border border-cream-dark bg-white text-brown text-sm focus:outline-none focus:ring-2 focus:ring-brown"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-brown text-sm font-semibold mb-1">Quantity</label>
+                  <label className="block text-brown text-sm font-semibold mb-1">Address / Postcode</label>
                   <input
                     type="text"
-                    name="quantity"
-                    value={formData.quantity}
+                    name="addressPostcode"
+                    value={formData.addressPostcode}
                     onChange={handleChange}
-                    placeholder="e.g. 12 cannoli, 2 whole cheesecakes"
+                    required
+                    placeholder="Delivery address and postcode"
                     className="w-full px-4 py-2.5 rounded-xl border border-cream-dark bg-white text-brown text-sm focus:outline-none focus:ring-2 focus:ring-brown"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-brown text-sm font-semibold mb-1">
-                    Delivery address &amp; special requests
-                  </label>
+                  <label className="block text-brown text-sm font-semibold mb-1">Notes / Requests / Info</label>
                   <textarea
-                    name="details"
-                    value={formData.details}
+                    name="notes"
+                    value={formData.notes}
                     onChange={handleChange}
-                    rows={3}
-                    placeholder="Address, delivery date, allergies, customisation requests..."
+                    rows={4}
+                    placeholder="Any details you want to share"
                     className="w-full px-4 py-2.5 rounded-xl border border-cream-dark bg-white text-brown text-sm focus:outline-none focus:ring-2 focus:ring-brown resize-none"
                   />
+                  <p className="text-xs text-brown-light mt-2 leading-relaxed">
+                    Please include any allergy information (e.g. nuts, dairy, eggs, gluten, soy) and dietary preferences
+                    such as halal-friendly, vegan-friendly, or alcohol-free requests.
+                  </p>
                 </div>
 
                 <button
@@ -125,6 +120,13 @@ export default function OrderForm() {
                 </button>
               </form>
             )}
+
+            <div className="mt-5 rounded-xl bg-white/70 border border-cream-dark px-4 py-3">
+              <p className="text-xs text-brown-light leading-relaxed">
+                <strong>Allergen notice:</strong> Our kitchen handles multiple allergens. We follow strict preparation
+                practices, but cannot guarantee zero cross-contact.
+              </p>
+            </div>
           </div>
         </div>
       </div>
