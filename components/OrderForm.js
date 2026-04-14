@@ -32,7 +32,12 @@ export default function OrderForm() {
               Ready to order?
             </h2>
             <p className="text-brown-light text-base leading-relaxed">
-              Share your details below and we&apos;ll get back to you to confirm availability and arrange your order.
+              Planning a celebration, café restock, or special event? Share your details below and we&apos;ll help you
+              choose the best options for your date, quantity, and budget.
+            </p>
+            <p className="text-brown-light text-base leading-relaxed mt-4">
+              Every enquiry is handled personally — from first message to final handover — so your order is smooth,
+              clear, and made exactly the way you need it.
             </p>
           </div>
 

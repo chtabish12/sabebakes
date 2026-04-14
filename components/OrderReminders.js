@@ -26,20 +26,6 @@ export default function OrderReminders() {
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-cream-dark/40">
-            <h3 className="font-playfair text-2xl md:text-3xl font-bold text-brown mb-4 uppercase">
-              Allergy &amp; Dietary Information
-            </h3>
-            <p className="text-brown-light text-lg leading-relaxed">
-              Our kitchen handles common allergens including gluten (wheat), milk, eggs, soy, peanuts and tree nuts.
-              While we take every precaution to prevent cross-contact, we cannot guarantee an allergen-free environment.
-            </p>
-            <p className="text-brown-light text-lg leading-relaxed mt-4">
-              Please share all allergy and dietary requirements when ordering. We offer halal-friendly, vegan-friendly,
-              alcohol-free and custom options wherever possible.
-            </p>
-          </div>
-
           <div className="bg-white rounded-2xl p-5 md:p-6 shadow-sm flex flex-col md:flex-row items-stretch gap-4">
             <div className="relative w-full md:w-1/2 h-56 md:h-auto rounded-xl overflow-hidden min-h-[220px]">
               <Image
