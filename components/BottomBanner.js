@@ -46,7 +46,7 @@ export default function BottomBanner() {
             Place an Order
           </a>
           <a
-            href="tel:+15551234567"
+            href="tel:+447526336511"
             className="border-2 border-cream/30 text-cream px-8 py-3.5 rounded-full font-lato font-semibold
                        text-sm tracking-wide hover:border-caramel hover:text-caramel transition-all duration-300"
           >
