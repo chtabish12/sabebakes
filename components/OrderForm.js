@@ -21,7 +21,7 @@ export default function OrderForm() {
   };
 
   return (
-    <section id="order" className="bg-cream py-20">
+    <section id="order" className="bg-cream py-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>

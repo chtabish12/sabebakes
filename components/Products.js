@@ -7,7 +7,7 @@ const popularCakes = [
     subtitle: "Classic | Customisable",
   },
   {
-    src: "/assets/cheese.png",
+    src: "/assets/cheese_new.png",
     name: "Cheesecakes",
     subtitle: "Flavours Available",
   },
@@ -113,7 +113,7 @@ function ProductSection({ title, subtitle, items }) {
 
 export default function Products() {
   return (
-    <section id="products" className="bg-cream py-20">
+    <section id="products" className="bg-cream py-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mb-4">
